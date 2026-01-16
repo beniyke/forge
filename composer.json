@@ -1,0 +1,25 @@
+{
+    "name": "anchor/forge",
+    "description": "Anchor Forge Package",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "BenIyke",
+            "email": "beniyke34@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Forge\\": "src/"
+        }
+    },
+    "extra": {
+        "anchor": {
+            "setup": "setup.php"
+        }
+    }
+}
