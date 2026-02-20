@@ -13,14 +13,14 @@ declare(strict_types=1);
 namespace Forge\Services;
 
 use Client\Client;
-use Database\Exceptions\ValidationException;
+use Exceptions\ValidationException;
 use Forge\Enums\LicenceStatus;
 use Forge\Exceptions\ForgeException;
 use Forge\Exceptions\LicenseActivationException;
 use Forge\Models\Licence;
 use Forge\Notifications\ActivationAlertNotification;
 use Forge\Services\Builders\LicenceBuilder;
-use Helpers\Data;
+use Helpers\Data\Data;
 use Helpers\DateTimeHelper;
 use Helpers\Validation\Validator;
 use Mail\Mail;

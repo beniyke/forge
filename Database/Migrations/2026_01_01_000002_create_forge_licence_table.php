@@ -20,7 +20,7 @@ class CreateForgeLicenceTable extends BaseMigration
      */
     public function up(): void
     {
-        Schema::create('forge_licence', function ($table) {
+        Schema::createIfNotExists('forge_licence', function ($table) {
             $table->id();
             $table->string('refid', 16)->unique();
             $table->string('key', 64)->unique();

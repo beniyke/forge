@@ -42,8 +42,9 @@ use Helpers\DateTimeHelper;
 class Licence extends BaseModel
 {
     use HasRefid;
+    public const TABLE = 'forge_licence';
 
-    protected string $table = 'forge_licence';
+    protected string $table = self::TABLE;
 
     protected array $fillable = [
         'refid',
